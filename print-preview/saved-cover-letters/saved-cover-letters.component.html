@@ -1,0 +1,23 @@
+
+<div class="main-content">
+    <app-nav-button [text]='"Home"' [icon]='"fa fa-home"' [url]='"/app/4/resumebuilder/home"'></app-nav-button>
+    <h4 *ngIf="savedCoverLetters?.length > 0" class="home-body-text" [innerHTML]="'CAPTION.YOUR_COVER_LETTERS' | translate"></h4>    
+    <h4 *ngIf="savedCoverLetters?.length == 0" class="home-body-text" [innerHTML]="'CAPTION.NO_COVER_LETTERS' | translate"></h4>    
+
+
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let coverLetter of savedCoverLetters" class="saved-cover-letter-container col-md-4">
+          <div (click)="selectCoverLetter(coverLetter)">
+            <div class="menu-item">
+              <div><b>Type:</b>&nbsp;{{ coverLetter.template }}</div>
+              <div><b>Style:</b>&nbsp;{{ coverLetter.style }}</div>
+              <p>{{ coverLetter.name }}</p>
+            </div>
+          </div>
+          <button class="resume-common-button red delete-cover-btn" (click)="deleteCoverLetter(coverLetter)"><i class="fa fa-trash"></i> <span [innerHTML]="'BUTTON.DELETE' | translate"></span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>

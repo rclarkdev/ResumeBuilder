@@ -1,0 +1,13 @@
+<div class="main-content">
+  <h4 class="home-body-text" [innerHTML]="'CAPTION.SELECT_OPTION' | translate"></h4>
+  <div id="HomePageMenu" class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let menuItem of homeMenu">
+          <div class="menu-item" (click)="selectMenuItem(menuItem)">
+              <i [class]="menuItem.icon"></i>
+              <p>{{menuItem.name}}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

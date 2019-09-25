@@ -1,0 +1,261 @@
+.clear-both {
+    clear: both;
+}
+/*
+######################################
+          Chronological Basic
+######################################
+*/
+/* 
+.chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;;
+}
+
+.chronological-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.chronological-basic .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 3em;
+}
+.chronological-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-basic .text-area-value {
+    margin: 5px 30px 0 45px;
+}
+.chronological-basic .degree-program {
+    margin-left: 45px;
+}
+.chronological-basic .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+
+.chronological-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.chronological-basic .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+} */
+
+/*
+###################################### 
+          Chronological Contemporary 
+######################################
+*/
+
+/* .chronological-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.chronological-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.chronological-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30%;
+}
+
+
+.chronological-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.chronological-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 30%;;
+}
+.chronological-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-contemporary .text-area-value {
+    margin: 5px 30px 0 30%;
+}
+.chronological-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+    clear: both;
+}
+.chronological-contemporary .degree-program {
+    margin-left: 30%;
+}
+
+.chronological-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.chronological-contemporary .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+} */
+
+/*
+###################################### 
+          FunctionalBasic 
+######################################
+*/
+/* 
+.chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;;
+}
+
+
+.functional-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.functional-basic .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 3em;
+}
+.functional-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-basic .text-area-value {
+    margin: 5px 30px 0 45px;
+}
+.functional-basic .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+.functional-basic  .degree-program {
+    margin-left: 45px;
+}
+
+.functional-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.functional-basic .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+} */
+
+/*
+###################################### 
+          FunctionalContemporary 
+######################################
+*/
+/* 
+.functional-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.functional-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.functional-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30%;
+}
+
+
+.functional-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.functional-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 30%;;
+}
+.functional-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-contemporary .text-area-value {
+    margin: 5px 30px 0 30%;
+}
+.functional-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+    clear: both;
+}
+.functional-contemporary .degree-program {
+    margin-left: 30%;
+}
+
+.functional-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.functional-contemporary .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+} */

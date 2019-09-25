@@ -1,0 +1,78 @@
+h4 {
+  font-size: 1.2rem;
+  margin: 30px 0 30px 5px;
+}
+
+#SavedCoverLettersMenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.delete-cover-btn {
+  margin: 10px 0 35px 0 !important;
+}
+
+.col-md-4 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.container {
+  text-align: center;
+}
+.menu-item {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+  cursor: pointer;
+  padding: 10px;
+  color: #337ab7;
+}
+
+.menu-item i {
+  font-size: 6em;
+  margin: 25px 20px 20px 20px;
+}
+
+.menu-item div {
+  text-align: left;
+}
+
+.menu-item:hover {
+  box-shadow: 0 1px 4px rgba(0,0,0,.8);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.8);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.8);
+}
+
+.menu-item:active {
+  box-shadow: 0 1px 4px rgba(0,180,0,0.6);
+  -moz-box-shadow: 0 1px 4px rgba(0,180,0,0.6);
+  -webkit-box-shadow: 0 1px 4px rgba(0,180,0,0.6);
+}
+.info {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.main-content p {
+  border-top: 6px solid #fff;
+  font-weight: bold;
+  color: #502e1b;
+  padding: 10px 0;
+  text-shadow: 0 1px rgba(255,255,255,.6);
+  margin: 0 auto;
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  #SavedCoverLettersMenu {
+    margin: 30px 0 60px 0;
+  }
+}

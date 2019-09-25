@@ -1,0 +1,128 @@
+.chronological-basic {
+  padding-bottom: 20px;
+}
+/*
+######################################
+          Cronological Basic
+######################################
+*/
+
+/* .chronological-basic h1 {
+    padding-top: .6em;
+    padding-left: .6em;
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+
+  .chronological-basic hr {
+      border-top: 2px solid #000;
+      margin: 0 1.3em 0 1.3em;
+  }
+
+  .chronological-basic p {
+    display: inline-block; 
+  }
+
+  .chronological-basic p:not(:last-child):after {
+    content:' | ';
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+  } 
+  
+  .phone {
+    margin: 5px 0 0 20px;
+  } */
+
+/*
+###################################### 
+          Cronological Contemporary 
+######################################
+*/
+
+/* .chronological-contemporary {
+  text-align: right;
+  padding-bottom: 2em;
+}
+.chronological-contemporary h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.chronological-contemporary hr {
+    border-top: 2px solid #000;
+    margin: 0 0 0 1.3em;
+}
+
+.chronological-contemporary p {
+  display: inline-block; 
+}
+
+.chronological-contemporary p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}  */
+
+/*
+###################################### 
+          FunctionalBasic 
+######################################
+*/
+
+/* .functional-basic h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+}
+
+.functional-basic hr {
+    border-top: 2px solid #000;
+    margin: 0 1.3em 0 1.3em;
+}
+
+.functional-basic p {
+  display: inline-block; 
+}
+
+.functional-basic p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}  */
+
+/*
+###################################### 
+          FunctionalContemporary 
+######################################
+*/
+
+/* .functional-contemporary {
+  text-align: right;
+  padding-bottom: 2em;
+}
+.functional-contemporary h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.functional-contemporary hr {
+    border-top: 2px solid #000;
+    margin: 0 0 0 1.3em;
+}
+
+.functional-contemporary p {
+  display: inline-block; 
+}
+
+.functional-contemporary p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}  */

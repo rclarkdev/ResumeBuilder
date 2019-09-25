@@ -1,0 +1,40 @@
+
+/*
+######################################
+        Chronological Basic
+######################################
+*/
+
+.chronological-basic .sender-name{
+    font-size: 27px;
+    line-height: 35px;
+}
+
+/*
+###################################### 
+        Functional Basic 
+######################################
+*/
+.functional-basic .sender-name{
+    font-size: 27px;
+    line-height: 35px;
+}
+/*
+######################################
+        Chronological Contemporary
+######################################
+*/
+
+.chronological-contemporary .sender-name{
+    font-size: 27px;
+    line-height: 35px;
+}
+/*
+###################################### 
+        Functional Contemporary 
+######################################
+*/
+.functional-contemporary .sender-name{
+    font-size: 27px;
+    line-height: 35px;
+}

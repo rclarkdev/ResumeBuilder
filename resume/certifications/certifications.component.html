@@ -1,0 +1,18 @@
+<div [class]="contentBlockCertifications.ClassName">
+    <ng-container *ngIf="contentBlockCertifications.CustomName; else contentBlockName">
+        <h2>{{contentBlockCertifications.CustomName}}</h2>
+    </ng-container>
+    <ng-template #contentBlockName>
+        <h2>{{contentBlockCertifications.ContentBlockName}}</h2>
+    </ng-template>
+    <div *ngFor="let group of contentBlockCertifications.ContentBlockGroups">
+        <h3>{{group.ContentBlockGroupName}}</h3>
+        <div class="license-name">
+            <span *ngIf="group.LicenseName">{{group.LicenseName}}</span>
+            <span class="license-date" *ngIf="group.LicenseDate">,&nbsp;{{group.LicenseDate}}</span>
+            <span class="license-date" *ngIf="group.CertificateDate">,&nbsp;{{group.CertificateDate}}</span>
+        </div><br />
+        <div class="licensing-body answers" *ngIf="group.LicensingBody">{{group.LicensingBody}}</div>
+        <div class="licensing-body answers" *ngIf="group.CertifyingBody">{{group.CertifyingBody}}</div>
+    </div>
+</div>

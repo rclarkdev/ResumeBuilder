@@ -1,0 +1,48 @@
+#ContentBlockName span {
+  color: #fff !important;
+}
+
+.add-sections {
+  margin: 0 20px 0 0;
+  width: 100%;
+}
+
+.content-block-title {
+  margin-top: 10px;
+  background: #2c68a4;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.named-block {
+  padding: 15px;
+  font-size: 16px;
+  color: #337ab7;
+  border: 2px solid #e2e2e2 !important;
+  word-break: break-all;
+}
+
+.named-block input {
+  height: 18px;
+  width: 25%;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.left-side {
+
+}
+
+.right-side {
+
+}

@@ -1,0 +1,26 @@
+<div class="main-content">
+    <app-nav-button [text]='"Go Back"' [icon]='"fa fa-arrow-left"'></app-nav-button>
+  
+  <ng-template [ngIf]='template == "choose-type"'>
+    <app-choose-type></app-choose-type>
+  </ng-template>
+
+  <ng-template [ngIf]='template == "Chronological" || template == "Functional"'>
+    <app-choose-style [template]="template"></app-choose-style>
+  </ng-template>
+
+  <ng-template [ngIf]='template == "choose-blocks"'>
+    <div class="choose-style" style="display:none;">
+      <h5><a [routerLink]='["../build-resume", "choose-type"]' [innerHTML]="'CAPTION.BACK_TO_TYPES' | translate"></a></h5>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <app-add-sections></app-add-sections>
+      </div>
+      <div class="col-md-8" id="ChooseBlocksRow">
+        <app-choose-blocks></app-choose-blocks>
+      </div>
+    </div>
+  </ng-template>
+
+</div>

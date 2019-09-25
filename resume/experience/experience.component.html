@@ -1,0 +1,45 @@
+<div [class]="contentBlockExperience.ClassName">
+    <ng-container *ngIf="contentBlockExperience.CustomName; else contentBlockName">
+        <h2>{{contentBlockExperience.CustomName}}</h2>
+    </ng-container>
+    <ng-template #contentBlockName>
+        <h2>{{contentBlockExperience.ContentBlockName}}</h2>
+    </ng-template>
+    <div *ngFor="let group of contentBlockExperience.ContentBlockGroups">
+
+        <h3>{{group.ContentBlockGroupName}}</h3>
+        <div class="title-org-loc">
+            <div class="position-title" *ngIf="group.PositionTitle">{{group.PositionTitle}}</div>
+            <div class="organization-name" *ngIf="group.EmployerName">,&nbsp;{{group.EmployerName}}</div>
+            <div class="organization-name" *ngIf="group.OrganizationName">,&nbsp;{{group.OrganizationName}}</div><br>
+            <div class="location" *ngIf="group.Location">{{group.Location}}</div>
+        </div>
+        <div class="date-range" *ngIf="group.DateRange">{{group.DateRange}}</div>
+        <div class="clear-both"></div>
+
+        <div *ngIf="group.ExperienceSummary">
+            <h4>Summary</h4>
+            <div class="text-area-value" [innerHTML]="group.ExperienceSummary"></div>
+        </div>
+        <div *ngIf="group.SkillsEntry">
+            <h4>Skills</h4>
+            <div class="text-area-value" [innerHTML]="group.SkillsEntry"></div>
+        </div>        
+        <div *ngIf="group.ResponsibilitiesEntry">
+            <h4>Responsibilities</h4>
+            <div class="text-area-value" [innerHTML]="group.ResponsibilitiesEntry"></div>
+        </div>        
+        <div *ngIf="group.AccomplishmentsEntry">
+            <h4>Accomplishments</h4>
+            <div class="text-area-value" [innerHTML]="group.AccomplishmentsEntry"></div>
+        </div>        
+        <div *ngIf="group.AwardsEntry">
+            <h4>Awards</h4>
+            <div class="text-area-value" [innerHTML]="group.AwardsEntry"></div>
+        </div>      
+        <div *ngIf="group.HoursPerX">
+            <h4>Volunteer Hours</h4>
+            <div class="text-area-value" [innerHTML]="group.HoursPerX"></div>
+        </div>      
+    </div>
+</div>

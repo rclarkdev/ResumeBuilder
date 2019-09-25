@@ -1,0 +1,134 @@
+<form class="form-horizontal" *ngIf="contentBlockRows?.length > 0" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <div class="row">
+    <div class='col-md-12'>
+      <div class="form-group">
+        <h3 class="content-heading"><span *ngIf="contentBlockIndex >= 0">{{contentBlockIndex+1}}.</span> {{contentBlockHeading}}<span *ngIf="contentBlockGroupHeading"> - {{contentBlockGroupHeading}}</span></h3>
+        <label>
+          <div>
+            <span class="asterisk-required">&#42;</span>
+          </div>
+          <span *ngIf="contentBlockGroupHeading === 'Abilities' || contentBlockGroupHeading === 'Skills' " [innerHTML]="contentBlockGroupHeading"></span>
+          <span *ngIf="contentBlockGroupHeading !== 'Abilities' && contentBlockGroupHeading !== 'Skills' " [innerHTML]="contentBlockHeading"></span>&nbsp;<span [innerHTML]="'LABEL.NAME' | translate"></span>
+        </label>
+        <input id="SectionTitle" type="text" class="form-control" value="{{contentBlockSelectedSection.title}}" [required]="true" />
+        <input id="SectionId" type="hidden" class="form-control" value="{{contentBlockSelectedSection.id}}" />
+        <input id="ContentBlockId" type="hidden" class="form-control" value="{{contentBlockId}}" />
+        <app-validation [name]="'LABEL.SECTION_TITLE' | translate" [id]="'RequiredSectionTitle'"></app-validation>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngFor="let row of contentBlockRows; let x = index" class="row">
+    <div *ngFor="let group of row.inputDirectiveGroups" [className]="group.columnSide === 'BOTH' ? 'width-full' : 'width-half'" >
+      <div [className]="'col-md-12'">
+        <div *ngFor="let inputDirective of group.inputDirectives; let i = index" class="form-group">
+          <div *ngIf="inputDirective">
+            
+            <div *ngIf="inputDirective.formComponent.componentLabel  && !inputDirective.formComponent.disabled">
+              <label>
+                  <div *ngIf="inputDirective.formComponent.required">
+                    <span class="asterisk-required">&#42;</span>
+                  </div>
+                  <span [innerHTML]="inputDirective.formComponent.componentLabel"></span>
+                </label>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "input"'>
+              <app-input [type]="inputDirective.directiveType"
+                         [id]="inputDirective.formComponent.componentName"
+                         [name]="inputDirective.formComponent.componentName"
+                         [value]="inputDirective.formComponent.componentValue"
+                         [required]="inputDirective.formComponent.required"
+                         [placeholder]="inputDirective.formComponent.placeholder"
+                         [index]="i">
+              </app-input>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "hidden" && !inputDirective.formComponent.disabled'>
+              <app-hidden [id]="inputDirective.formComponent.componentName"
+                         [name]="inputDirective.formComponent.componentName"
+                         [value]="inputDirective.formComponent.componentValue">
+              </app-hidden>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "textarea"' id="{{inputDirective.formComponent.componentName}}Container">
+              <app-textarea [id]="inputDirective.formComponent.componentName"
+                            [name]="inputDirective.formComponent.componentName"
+                            [value]="inputDirective.formComponent.componentValue"
+                            [required]="inputDirective.formComponent.required"
+                            [placeholder]="inputDirective.formComponent.placeholder"
+                            [index]="i">
+              </app-textarea>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "date"'>
+              <app-datetime [id]="inputDirective.formComponent.componentName"
+                            [value]="inputDirective.formComponent.componentValue"
+                            [required]="inputDirective.formComponent.required"
+                            [index]="i">
+              </app-datetime>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "select"'>
+              <app-select [id]="inputDirective.formComponent.componentName"
+                          [value]="inputDirective.formComponent.componentValue"
+                          [listItems]="inputDirective.formComponent.listItems"
+                          [required]="inputDirective.formComponent.required"
+                          [index]="i">
+              </app-select>
+
+              <div *ngIf='inputDirective.formComponent.componentValue === "OtherStateProvince"'>
+                <app-input id="OtherStateProvince" 
+                          [type]='"text"' 
+                          [id]='"OtherStateProvinceField"'>
+                </app-input>
+              </div>
+
+              <div *ngIf='inputDirective.formComponent.componentValue === "OtherAward"'>
+                <app-input id="OtherAward" [type]='"text"' [id]='"OtherAwardField"'></app-input>
+              </div>
+            </div>
+
+            <div *ngIf='inputDirective?.directiveType === "radio" && !inputDirective.formComponent.disabled'>
+              <div class="form-control">
+                <div id="{{inputDirective.formComponent.componentName}}" *ngFor="let radioButton of inputDirective.formComponent.radioButtons" class="radio-component">
+                  <label [innerHTML]="radioButton.label">
+                      <app-radio [id]="inputDirective.formComponent.componentName"
+                        [required]="inputDirective.formComponent.required"
+                        [index]="i"
+                        [radioButton]="radioButton"
+                        (addBullet)="receiveAddBulletEvent($event, inputDirective.formComponent.componentName)" >
+                      </app-radio>
+                  </label>
+                </div>
+                <div id="{{inputDirective.formComponent.componentName}}AddRemove" class="add-remove-bullet hidden">
+                  <button class="add-bullet-btn" (click)="addElement(inputDirective.formComponent.componentName)">Add Another</button>
+                  <button class="remove-bullet-btn" (click)="removeElement(inputDirective.formComponent.componentName)">Remove Last</button>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="inputDirective.formComponent.required && !inputDirective.formComponent.disabled">
+              <app-validation [name]="inputDirective.formComponent.componentLabel"
+                              [id]="'Required'+inputDirective.formComponent.componentName" >
+              </app-validation>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="contentBlockRows?.length === x+1">
+      <div *ngIf="handleBulletData(hiddenBulletEntries)"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group" id="BtnSaveContentBlockGroup">
+        <button type="submit" class="resume-common-button red wide">
+          <i class="fa fa-save"> </i>
+          <span [innerHTML]="'BUTTON.SAVE_ADD_ANOTHER' | translate"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

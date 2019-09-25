@@ -1,0 +1,23 @@
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    color: #444;
+}
+.clear-both {
+  clear: both;
+}  
+#CoverLetter {
+  width: 100%;
+  max-width: 833px;
+  background: white;
+  margin: 30px auto;
+  box-shadow: 0 0 10px #333;
+  padding-bottom: 20px;
+}
+#CoverLetterContent {
+  padding: 45px;
+}
+.cover-letter-date { 
+  padding-top: 30px; 
+}

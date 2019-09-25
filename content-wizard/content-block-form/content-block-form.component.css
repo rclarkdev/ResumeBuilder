@@ -1,0 +1,89 @@
+label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.row {
+  padding: 0 5px 0 5px;
+}
+
+.add-bullet-btn, 
+.remove-bullet-btn {
+  background-color: #f2f2f2;
+  border: 1px solid #bfbfbf;
+  color: #505050;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.form-horizontal .form-group {
+  margin-right: -5px !important;
+  margin-left: -5px !important;
+}
+
+form button.btn {
+  padding-bottom: 5px !important;
+}
+
+.radio-component {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.add-remove-bullet {
+  display: inline-block;
+}
+
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 50%;
+}
+
+h3.content-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#BtnSaveContentBlock {
+  margin-top: 10px;  
+}
+
+@media screen and (max-width: 700px) {
+
+  h3 .content-heading {    
+    margin-top: 0;
+  }
+
+  #BtnSaveContentBlockGroup {
+    margin-bottom: 45px;
+  }
+}

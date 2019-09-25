@@ -1,0 +1,41 @@
+
+<div class="row type-txt">
+  <div class="col-md-12">
+    <h4 class="content-heading" [innerHTML]="'CAPTION.PLEASE_SELECT_RESUME_STYLE' | translate"></h4>
+  </div>
+</div>
+
+<div id="ChooseStyleRow">
+  <ng-template [ngIf]='template == "Chronological"'>
+    <div class="row">
+
+      <div class="col-md-6 container" (click)='chooseStyle("Basic")'>
+        <h3><b><span [innerHTML]="'RESUME.BASIC' | translate"></span></b></h3>
+        <img src="../../assets/img/Chronological_Basic_Resume.jpg" alt="Avatar" class="template-img">
+      </div>
+
+
+      <div class="col-md-6 container" (click)='chooseStyle("Contemporary")'>
+        <h3><b><span [innerHTML]="'RESUME.CONTEMPORARY' | translate"></span></b></h3>
+        <img src="../../assets/img/Chronological_Contemporary_Resume.jpg" alt="Avatar" class="template-img">
+      </div>
+
+    </div>
+  </ng-template>
+
+  <ng-template [ngIf]='template == "Functional"'>
+    <div class="row">
+
+      <div class="col-md-6 container" (click)='chooseStyle("Basic")'>
+        <h3><b><span [innerHTML]="'RESUME.BASIC' | translate"></span></b></h3>
+        <img src="../../assets/img/Functional_Basic_Resume.jpg" alt="Avatar" class="template-img">
+      </div>
+
+      <div class="col-md-6 container" (click)='chooseStyle("Contemporary")'>
+        <h3><b><span [innerHTML]="'RESUME.CONTEMPORARY' | translate"></span></b></h3>
+        <img src="../../assets/img/Functional_Contemporary_Resume.jpg" alt="Avatar" class="template-img">
+      </div>
+
+    </div>
+  </ng-template>
+</div>

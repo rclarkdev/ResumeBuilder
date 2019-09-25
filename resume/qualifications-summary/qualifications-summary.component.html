@@ -1,0 +1,14 @@
+<div [class]="contentBlockQualifications.ClassName">
+    <ng-container *ngIf="contentBlockQualifications.CustomName; else contentBlockName">
+        <h2>{{contentBlockQualifications.CustomName}}</h2>
+    </ng-container>
+    <ng-template #contentBlockName>
+        <h2>{{contentBlockQualifications.ContentBlockName}}</h2>
+    </ng-template>
+    <div *ngFor="let group of contentBlockQualifications.ContentBlockGroups">
+        <h3>{{group.ContentBlockGroupName}}</h3>
+        <div class="answers" *ngFor="let answer of group.Answers">
+            <div [innerHTML]="answer"></div>
+        </div>
+    </div>
+</div>

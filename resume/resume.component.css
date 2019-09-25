@@ -1,0 +1,444 @@
+/* #ResumeContainer {
+    width: 100%;
+    max-width: 833px;
+    background: white;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #333;
+    padding: 30px;
+    font-size: 14px;
+  }
+
+  .clear-both {
+    clear: both;
+} */
+/*
+################################################
+          Chronological Basic
+################################################
+*/
+/* 
+.chronological-basic h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+  font-size: 30px !important;
+  font-weight: bold;
+}
+
+.chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;
+}
+
+.chronological-basic hr {
+    border-top: 2px solid #000;
+    margin: 0 1.3em 0 1.3em;
+}
+
+.chronological-basic p {
+  display: inline-block; 
+}
+
+.chronological-basic p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+} 
+
+.phone {
+  margin: 5px 0 0 20px;
+}
+
+.chronological-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.chronological-basic .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 3em;
+}
+.chronological-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-basic .text-area-value {
+    margin: 5px 30px 0 45px;
+}
+.chronological-basic .degree-program {
+    margin-left: 45px;
+}
+.chronological-basic .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+
+.chronological-basic .title-org-loc {
+  margin-left: 45px;
+  float: left;
+}
+
+.chronological-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.chronological-basic .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+
+.chronological-basic .license-date {
+  display: inline-block;
+  float: left;
+  padding-left: 45px;
+}
+.chronological-basic .license-name {
+  display: inline-block;
+  float: left;
+}
+
+.chronological-basic .licensing-body {
+  padding-left: 45px;
+}  */
+
+
+/*
+################################################ 
+          Chronological Contemporary 
+################################################
+*/
+/* 
+.chronological-contemporary h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.chronological-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.chronological-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.chronological-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30%;
+}
+
+.chronological-contemporary hr {
+  border-top: 2px solid #000;
+  margin: 0 0 0 1.3em;
+}
+
+.chronological-contemporary p {
+display: inline-block; 
+}
+
+.chronological-contemporary p:not(:last-child):after {
+content:' | ';
+font-weight: bold;
+padding: 10px;
+font-size: 20px;
+}
+
+.chronological-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.chronological-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 30%;;
+}
+.chronological-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-contemporary .text-area-value {
+    margin: 5px 30px 0 30%;
+}
+.chronological-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+    clear: both;
+}
+.chronological-contemporary .degree-program {
+    margin-left: 30%;
+}
+
+.chronological-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.chronological-contemporary .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+}
+
+.chronological-contemporary .title-org-loc {
+  margin-left: 30%;
+  float: left;
+  clear: both;
+}
+
+.chronological-contemporary .license-date {
+  display: inline-block;
+  float: left;
+  padding-left: 30%;
+  clear: both;
+}
+.chronological-contemporary .license-name {
+  display: inline-block;
+  float: left;
+}
+
+.chronological-contemporary .licensing-body {
+  padding-left: 30%;
+  clear: both;
+} */
+
+/*
+################################################
+          FunctionalBasic 
+################################################
+*/
+/* 
+.functional-basic h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+}
+
+.chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;;
+}
+
+.functional-basic hr {
+    border-top: 2px solid #000;
+    margin: 0 1.3em 0 1.3em;
+}
+
+.functional-basic p {
+  display: inline-block; 
+}
+
+.functional-basic p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.functional-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.functional-basic .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 3em;
+}
+.functional-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-basic .text-area-value {
+    margin: 5px 30px 0 45px;
+}
+.functional-basic .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+.functional-basic  .degree-program {
+    margin-left: 45px;
+}
+
+.functional-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.functional-basic .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 45px;
+}
+
+.functional-basic .title-org-loc {
+  margin-left: 45px;
+  float: left;
+}
+
+.functional-basic .license-name {
+  display: inline-block;
+  float: left;
+}
+.functional-basic .licensing-body {
+  padding-left: 45px;
+}
+
+.functional-basic .licensing-body {
+  padding-left: 45px;
+} */
+
+/*
+################################################ 
+          FunctionalContemporary 
+################################################
+*/
+/* 
+.functional-contemporary h1 {
+  padding-top: .6em;
+  padding-left: .6em;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+.functional-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.functional-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.functional-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+.functional-contemporary hr {
+    border-top: 2px solid #000;
+    margin: 0 0 0 1.3em;
+}
+
+.functional-contemporary p {
+  display: inline-block; 
+}
+
+.functional-contemporary p:not(:last-child):after {
+  content:' | ';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+} 
+
+.functional-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.functional-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 30%;;
+}
+.functional-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-contemporary .text-area-value {
+    margin: 5px 30px 0 30%;
+}
+.functional-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+    clear: both;
+}
+
+.functional-contemporary .title-org-loc {
+  margin-left: 30%;
+  float: left;
+  clear: both;
+}
+
+.functional-contemporary .degree-program {
+    margin-left: 30%;
+}
+
+.functional-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+}
+
+.functional-contemporary .date-awarded {
+    display: inline-block;
+    float: left;
+    margin-left: 30%;
+}
+
+.functional-contemporary .license-date {
+  display: inline-block;
+  float: left;
+  padding-left: 30%;
+  clear: both;
+}
+.functional-contemporary .license-name {
+  display: inline-block;
+  float: left;
+}
+
+.functional-contemporary .licensing-body {
+  padding-left: 30%;
+  clear: both;
+} */

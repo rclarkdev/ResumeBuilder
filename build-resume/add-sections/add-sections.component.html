@@ -1,0 +1,17 @@
+
+<div id="AddSectionsComponent" class="hidden">
+  <div id="ContentBlockName"><span>{{chosenContentBlockName}}</span></div> 
+  <div *ngFor="let section of contentBlock.sections">
+    <div class="named-block">
+      <label>
+        <b><span [innerHTML]="'LABEL.NAME' | translate"></span>:</b>&nbsp;<span>{{section.name}}</span>
+      </label> <br>
+      <label>
+        <b><span [innerHTML]="'LABEL.GROUP' | translate"></span>:</b>&nbsp;<span>{{section.groupName}}</span>
+       </label> <br>
+       <label class=""> 
+         <b *ngIf="!sectionSelected" class="pull-left"><span [innerHTML]="'LABEL.ADD_TO_RESUME' | translate"></span>:</b>
+        <input type="checkbox" [id]="section.Id" class="checkbox" [checked]="section.Selected" (click)="selectSection(contentBlock, section, $event)" />
+        </label>
+    </div>
+  </div>

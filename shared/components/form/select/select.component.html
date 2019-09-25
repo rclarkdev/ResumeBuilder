@@ -1,0 +1,14 @@
+<select [id]="id" class="form-control" (change)="selectOption($event)">
+  <option value="">{{ 'OPTION.SELECT' | translate }}</option>
+  <option *ngIf="id === 'StateProvince'" value='OtherStateProvince'>Other</option>
+  <option *ngFor="let listItem of listItems" [value]="listItem.value" [selected]="listItem.selected" [disabled]="listItem.disabled">
+    {{ listItem.text }}
+  </option>
+</select>
+<div *ngIf="otherStateProvinceVisible" [@slideInOut]>
+  <app-input id="OtherStateProvince" [type]='"text"' [id]='"OtherStateProvinceField"' [border]='"border-red"'></app-input>
+</div>
+
+<div *ngIf="otherAwardVisible" [@slideInOut]>
+  <app-input id="OtherAward" [type]='"text"' [id]='"OtherAwardField"' [border]='"border-red"'></app-input>
+</div>

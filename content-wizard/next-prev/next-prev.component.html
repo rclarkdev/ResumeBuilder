@@ -1,0 +1,12 @@
+<div class="hide-until-page-loaded hidden" id="NextPrevComponent">
+  <div style="margin-bottom: 5px; clear: both; ">
+    <div class="prev">
+      <button class="btn btn-prev elemenet-disabled" (click)="getNextOrPrev(-1, $event)"><</button>
+      <label [innerHTML]="'BUTTON.PREV' | translate"></label>
+    </div>
+    <div class="next">
+      <label [innerHTML]="'BUTTON.NEXT' | translate"></label>
+      <button class="btn btn-next" (click)="getNextOrPrev(1, $event)">></button>
+    </div>
+  </div>
+</div>

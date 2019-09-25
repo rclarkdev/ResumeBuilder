@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" type="text/css" [href]='sanitizer.bypassSecurityTrustResourceUrl(cssUrl)'>
+</head>
+
+<div id="CoverLetter">
+  <div id="CoverLetterContent">    
+    <app-heading [senderName]="senderName" [className]="className" ></app-heading>
+    <div class="clear-both"></div>
+    <div class="cover-letter-date">      
+      {{ coverLetterDate | date:'MMMM d, yyyy' }}
+    </div>
+    
+    <app-recipient [recipientName]="recipientName" [recipientAddress]="recipientAddress" [className]="className"></app-recipient>
+    <div class="clear-both"></div>
+
+    <div *ngIf="hasIntro">
+      <app-intro [intro]="intro" [className]="className"></app-intro>
+      <div class="clear-both"></div>
+    </div>
+
+    <app-body [body]="body" [className]="className"></app-body>
+    <div class="clear-both"></div>
+
+    <app-valediction [valediction]="valediction" [senderName]="senderName" [className]="className"></app-valediction>
+    <div class="clear-both"></div>
+  </div>
+</div>

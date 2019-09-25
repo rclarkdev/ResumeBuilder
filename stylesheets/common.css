@@ -1,0 +1,40 @@
+.resume-common-button {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 2px;
+  border-width: 0;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0;
+  outline: 0 none;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1) 0s, background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  will-change: box-shadow, transform;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  min-width: 100%;
+  font-size: 1.2em;
+  min-height: 40px;
+}
+
+.resume-common-button.red {
+  background-color: #b53c29;
+  border-color: #c6c6c6;
+}
+
+.resume-common-button.blue {
+  background-color: #a04efd;
+  border-color: #c6c6c6;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.asterisk-required {
+  color: red;
+  padding-right: 5px;
+  float: left;
+}

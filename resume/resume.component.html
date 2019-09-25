@@ -1,0 +1,59 @@
+<head>
+   <link rel="stylesheet" type="text/css" [href]='sanitizer.bypassSecurityTrustResourceUrl(cssUrl)'>
+</head>
+
+<div id="ResumeContainer">
+  <div [id]="resumeId" class="resume-wrapper">
+
+    <div *ngIf="heading !== undefined">
+      <app-heading [heading]="heading"></app-heading>
+    </div>
+
+    <div *ngFor="let contentBlock of contentBlocks; let i = index" class="form-group" >
+
+      <!-- <div *ngIf='contentBlock.contentBlockName === "Objective"'>
+        <app-objective [resume]="resume"></app-objective>
+      </div> -->
+
+     <div *ngIf='contentBlock.ContentBlockName === "Qualifications"'>
+        <app-qualifications-summary 
+          [contentBlockQualifications]="contentBlock" >
+        </app-qualifications-summary>
+      </div>
+
+      <div *ngIf='contentBlock.ContentBlockName === "Experience"'>
+        <app-experience 
+          [contentBlockExperience]="contentBlock" >
+        </app-experience>
+      </div>
+
+      <div *ngIf='contentBlock.ContentBlockName === "Education"'>
+        <app-education 
+          [contentBlockEducation]="contentBlock" >
+        </app-education>
+      </div>
+     <div *ngIf='contentBlock.ContentBlockName === "Certifications"'>
+        <app-certifications 
+          [contentBlockCertifications]="contentBlock" >
+        </app-certifications>
+      </div>
+
+      <div *ngIf='contentBlock.ContentBlockName === "Skills and Abilities"'>
+        <app-skills 
+          [contentBlockSkillsAndAbilities]="contentBlock" >
+        </app-skills>
+      </div> 
+
+      <div *ngIf='contentBlock.ContentBlockName === "Other"'>
+        <app-other 
+          [contentBlockOther]="contentBlock" >
+        </app-other>
+      </div>
+
+      <!-- <div *ngIf='contentBlock.contentBlockName === "References"'>
+        <app-references [resume]="resume"></app-references>
+      </div> -->
+    </div>
+    <div class="clear-both"></div>
+  </div>
+</div>

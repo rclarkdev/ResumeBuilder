@@ -1,0 +1,17 @@
+<div class="main-content">
+<app-nav-button [text]='"Home"' [url]='"/app/4/resumebuilder/home"' [icon]='"fa fa-home"'></app-nav-button>
+  <h4 *ngIf="savedResumes?.length > 0" class="home-body-text">{{ 'CAPTION.YOUR_RESUMES' | translate }}</h4>
+  <h4 *ngIf="savedResumes?.length == 0" class="home-body-text">You don't have any saved Resumes</h4> 
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let resume of savedResumes" class="saved-resume-container col-md-4">
+          <div class="menu-item" (click)="selectResume(resume)">
+            <div><b>Type:</b>&nbsp;{{ resume.template }}</div>
+            <div><b>Style:</b>&nbsp;{{ resume.style }}</div>
+            <p>{{ resume.name }}</p>
+          </div>
+        <button class="resume-common-button red delete-resume-btn" (click)="deleteResume(resume)"><i class="fa fa-trash"></i> {{ 'BUTTON.DELETE' | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>

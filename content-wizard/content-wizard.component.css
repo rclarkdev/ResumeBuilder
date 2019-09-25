@@ -1,0 +1,15 @@
+
+.saved-blocks .row .col-md-6 {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 1px;
+}
+
+.home-body-text {
+  font-size: 1.2em;
+}
+
+.content-block-heading {
+  margin-bottom: 30px;
+}
+

@@ -1,0 +1,23 @@
+
+<div class="backdrop" [ngStyle]="{'display': display}"></div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': display}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 [innerHTML]="'CAPTION.CONTENT_BLOCK_NAME' | translate"></h4>
+        <button type="button" class="close" aria-label="close" (click)="closeModalDialog()"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <form (ngSubmit)="setCustomContentBlockName()">
+        <div class="modal-body">
+        <div>
+          <input id="SectionName" type="text" class="textbox form-control" name="name" [value]="contentBlockName" />
+        </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary pull-right" value="save" [disabled]="false" (click)="closeModalDialog()" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

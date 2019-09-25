@@ -1,0 +1,14 @@
+<div class="main-content">
+  <app-nav-button [text]='"Go Back"' [icon]='"fa fa-arrow-left"' ></app-nav-button>
+  <h4 class="home-body-text"><span [innerHTML]="'CAPTION.SELECT_OPTION' | translate"></span></h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let menuItem of contentBlockList">
+        <div class="menu-item" (click)="selectMenuItem(menuItem)">
+          <i [class]="menuItem.icon"></i>
+          <p>{{menuItem.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,237 @@
+.clear-both {
+    clear: both;
+}
+/*
+######################################
+          Chronological Basic
+######################################
+*/
+
+/* .chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;;
+}
+
+.chronological-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.chronological-basic .position-title {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+.chronological-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-basic .text-area-value {
+    margin: 5px 45px 0 45px;
+}
+.chronological-basic .organization-name {
+    display: inline-block;
+    float: left;
+}
+
+.chronological-basic .title-org-loc {
+    margin-left: 45px;
+    float: left;
+}
+
+.chronological-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+} */
+
+/*
+###################################### 
+          Chronological Contemporary 
+######################################
+*/
+
+/* .chronological-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.chronological-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.chronological-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 30%;
+}
+.chronological-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.chronological-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+.chronological-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.chronological-contemporary .text-area-value {
+    margin: 5px 45px 0 30%;
+}
+.chronological-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+}
+
+.chronological-contemporary .title-org-loc {
+    margin-left: 30%;
+    float: left;
+    clear: both;
+}
+
+.chronological-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+} */
+
+/*
+###################################### 
+          FunctionalBasic 
+######################################
+*/
+
+/* .chronological-basic h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+}
+
+.chronological-basic h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2.2em;
+    text-decoration: underline;
+}
+
+.chronological-basic h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 45px;;
+}
+
+
+.functional-basic .answers {
+    padding: 0 2em 1em 2.9em;
+}
+
+.functional-basic .position-title {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+.functional-basic .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-basic .text-area-value {
+    margin: 5px 45px 0 45px;
+}
+.functional-basic .organization-name {
+    display: inline-block;
+    float: left;
+}
+
+.functional-basic .title-org-loc {
+    margin-left: 45px;
+    float: left;
+}
+
+.functional-basic .date-range {
+    text-align: right;
+    margin-right: 3em;
+} */
+
+/*
+###################################### 
+          FunctionalContemporary 
+######################################
+*/
+
+/* .functional-contemporary h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.functional-contemporary h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 30%;
+    text-decoration: underline;
+}
+
+.functional-contemporary h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 45px 5px 30%;
+}
+.functional-contemporary .answers {
+    padding: 0 2em 1em 30%;
+}
+
+.functional-contemporary .position-title {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+}
+.functional-contemporary .location {
+    display: inline-block;
+    float: left;
+    margin: 0 0 .2em 0;
+}
+.functional-contemporary .text-area-value {
+    margin: 5px 45px 0 30%;
+}
+.functional-contemporary .organization-name {
+    display: inline-block;
+    float: left;
+}
+
+.functional-contemporary .title-org-loc {
+    margin-left: 30%;
+    float: left;
+    clear: both;
+}
+
+.functional-contemporary .date-range {
+    text-align: right;
+    margin-right: 3em;
+} */

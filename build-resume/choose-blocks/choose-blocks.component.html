@@ -1,0 +1,32 @@
+<div id="BtnSavePrintResume">
+  <p><b><span [innerHTML]="'CAPTION.CLICK_SECTION' | translate"></span></b></p>
+  <button id="SavePrintBtn" class="resume-common-button red wide" (click)="saveResume($event)">
+    <i class="fa fa-save"> </i>
+    <span [innerHTML]="'BUTTON.SAVE_PRINT' | translate"></span>
+  </button>
+  <app-validation [name]="'CONTENT_BLOCK.CONTACT_INFO' | translate" [id]="'RequiredContactInfo'"></app-validation>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-5">
+        <h4 class="block-title" id="ContentBlock0" >
+          <b>
+            <a href="javascript:void(0)"><span id="BlockName0" (click)="getBlockSections(contactInfo, $event, 0)" [innerHTML]="'CONTENT_BLOCK.CONTACT_INFO' | translate"></span></a>
+          </b>
+        </h4>
+      </div>
+
+      <div *ngIf="contactInfo !== undefined">
+        <div *ngFor="let section of contactInfo.sections" style="width:100%;">
+          <div *ngIf="section.selected" class="block-sections" id="BlockSections{{contactInfo.id}}">
+            <span class="section-name"><b>&nbsp;&nbsp;<u>{{section.name}} - {{section.groupName}}</u></b></span>
+            <div *ngFor="let answer of section.answers" class="answers-container">
+              <p><b>{{answer.label}}:</b>&nbsp;<span [innerHTML]="answer.value"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-modal [renameBlock]='renameBlock' (nameEvent)="receiveMessage($event)"></app-modal> 

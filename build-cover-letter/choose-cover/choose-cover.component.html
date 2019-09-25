@@ -1,0 +1,44 @@
+<div class="row">      
+  <h4 *ngIf="coverLetter.sections?.length === 0" [innerHTML]="'CAPTION.NO_COVER_INFO' | translate"></h4>  
+  <div class="col-md-3">
+      
+      <div id="AddCoverLetterComponent" *ngIf="coverLetter.sections?.length > 0">
+        <div class="cover-letter-title">
+          <span id="CoverLetterName" [innerHTML]="'CAPTION.YOUR_COVER_LETTERS' | translate"></span>
+        </div>
+        <div *ngFor="let section of coverLetter.sections">
+          <div class="named-cover-letter">
+            <label>
+              <b><span [innerHTML]="'LABEL.NAME' | translate"></span>:</b>&nbsp;<span [innerHTML]="section.name"></span>
+            </label> <br>
+            <label>
+              <b [innerHTML]="'LABEL.GROUP' | translate">:</b>&nbsp;<span [innerHTML]="section.groupName"></span>
+              </label> <br>
+              <label> 
+                <b class="pull-left"><span [innerHTML]="'CAPTION.ADD_COVER' | translate"></span></b>
+              <input type="checkbox" [id]="section.id" [checked]="section.selected" (click)="selectCoverLetter(section, $event)" />
+              </label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-9" id="ChooseBlocksRow">
+    <div *ngIf="selected" id="BtnSavePrintResume">
+        <button class="resume-common-button red wide" (click)="saveCoverLetter($event)">
+          <i class="fa fa-save"> </i>
+          <span [innerHTML]="'BUTTON.SAVE_PRINT' | translate"></span>
+        </button>
+      </div>   
+      
+      <div *ngIf="selected && displayAnswers" class="block-sections">
+        <div class="container">
+          <div>
+            <span class="section-name"><b>&nbsp;&nbsp;<u>{{section.name}} - {{section.groupName}}</u></b></span>
+          </div>
+          <div *ngFor="let answer of answers" class="answers-container">
+            <p><b>{{answer.label}}:</b><br><span [innerHTML]="answer.value"></span></p>
+          </div>
+        </div>
+      </div>
+  </div>                  
+</div>   

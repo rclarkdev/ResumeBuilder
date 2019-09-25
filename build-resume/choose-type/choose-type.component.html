@@ -1,0 +1,31 @@
+
+<div class="row type-txt">
+  <div class="col-md-12">
+    <h4 class="content-heading" [innerHTML]="'CAPTION.PLEASE_ENTER_RESUME_NAME_AND_TYPE' | translate"></h4>
+  </div>
+</div>
+  
+<div class="row resume-name">
+  <div class="col-md-12">
+    <h4>
+        <div>
+          <span class="asterisk-required">&#42;</span>
+        </div>
+        <b><span [innerHTML]="'CAPTION.RESUME_NAME' | translate"></span></b>
+    </h4>
+    <input id="ResumeName" type="text" #box (keyup)="onKey(box.value)" class="form-control">
+    <app-validation [id]="'RequiredResumeName'" [name]="'CAPTION.RESUME_NAME' | translate"></app-validation>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="row" id="ChooseTypeRow">
+  <div class="col-md-6 container" (click)='chooseType("Chronological")'>
+    <h3><b><span [innerHTML]="'RESUME.CHRONOLOGICAL' | translate"></span></b></h3>
+    <img src="../../assets/img/Chronological_Basic_Resume.jpg" alt="Avatar" class="template-img">
+  </div>
+  <div class="col-md-6 container" (click)='chooseType("Functional")'>
+    <h3><b><span [innerHTML]="'RESUME.FUNCTIONAL' | translate"></span></b></h3>
+    <img src="../../assets/img/Functional_Basic_Resume.jpg" alt="Avatar" class="template-img">
+  </div>
+</div>

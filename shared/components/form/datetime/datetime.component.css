@@ -1,0 +1,15 @@
+
+.owl-dt-control-button {
+  font-size: 1.3em !important;
+}
+
+.owl-dt-calendar-table,
+.owl-dt-calendar-header,
+.owl-dt-weekdays th {
+  font-size: 1em !important;
+}
+
+.owl-dt-calendar-table,
+.owl-dt-calendar-cell-content {
+  font-size: 1em !important;
+}

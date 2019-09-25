@@ -1,0 +1,24 @@
+.my-resume-head {
+  padding: 20px;
+  background: #ddd;
+  font-weight: 700;
+}
+
+.my-resume-head span {
+
+}
+.print-save-export {
+  text-align: right;
+  text-align: right;
+  padding: 10px 20px 1px 0;
+}
+
+.print-save-export button {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.selected-type,
+.selected-style {
+  margin-left: 30px;
+}

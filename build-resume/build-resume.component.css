@@ -1,0 +1,15 @@
+h4 {
+  font-size: 18px;
+}
+
+#BtnSavePrintResume{
+  margin-bottom:10px;
+}
+
+#ChooseBlocksRow {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #ChooseBlocksRow { margin-bottom: 40px; }
+}

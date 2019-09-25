@@ -1,0 +1,8 @@
+<div [class]="heading.ClassName" id="heading">
+    <h1>{{ heading.FullName }}</h1>
+    <hr>
+    <span class="phone" *ngIf="heading.PhoneNumber"> {{ heading.PhoneNumber }} </span><span class="rc-vertical-bar">&#124;</span>
+    <span class="email" *ngIf="heading.EmailAddress"> {{ heading.EmailAddress }} </span><span class="rc-vertical-bar">&#124;</span>
+    <span class="address" *ngIf="heading.Address"> {{ heading.Address }} </span><br>
+    <p class="website" *ngIf="heading.Website"> {{ heading.Website }} </p>
+</div>

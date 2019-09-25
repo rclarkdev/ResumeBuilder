@@ -1,0 +1,16 @@
+<div class="main-content">
+    <app-nav-button [text]='"Go Back"' [icon]='"fa fa-arrow-left"'></app-nav-button>
+    
+    <ng-template [ngIf]='template == "choose-type"'>
+    <app-choose-type></app-choose-type>
+    </ng-template>
+  
+    <ng-template [ngIf]='template == "Chronological" || template == "Functional"'>
+      <app-choose-style [template]="template"></app-choose-style>
+    </ng-template>
+  
+    <ng-template [ngIf]='template == "choose-cover"'>
+      <app-choose-cover></app-choose-cover>
+    </ng-template>
+  </div>
+  

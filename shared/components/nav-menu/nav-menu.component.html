@@ -1,0 +1,56 @@
+<div class="topnav row" id="myTopnav">
+  <div class="dropdown" id="NavHomeMobile">
+    <div id="ResumeInfoListMobile" class="dropdown-content">
+      <div *ngFor="let contentBlock of contentBlockListMobile">
+        <a [routerLink]='["/" + contentBlock.route, contentBlock.name]' (click)="selectNavItem(contentBlock.name, contentBlock.navType)">
+          {{ contentBlock.name }}
+        </a>
+      </div>
+    </div>
+    <button class="dropbtn">
+      <i class="fa fa-home"></i>
+      <i class="fa fa-caret-up"></i>
+    </button>
+  </div>
+  <a id="NavHomeDesktop" href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/home')" >
+    <i class="fa fa-home"></i>
+    {{ 'NAV.HOME' | translate }}
+  </a>
+  <a href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/content-block-groups/Cover Letter', 'Cover Letter')">
+    <i class="fa fa-file"></i>
+    {{ 'NAV.COVER_LETTER' | translate }}
+  </a>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-pencil"></i>
+      {{ 'NAV.RESUME_CONTENT' | translate }}
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="ResumeInfoList" class="dropdown-content">
+      <div *ngFor="let contentBlock of contentBlockList" id="DesktopNavItem{{ contentBlock.name }}">
+        <a href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/content-block-groups/' + contentBlock.name, contentBlock.name)">
+          {{ contentBlock.name }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/build-resume/choose-type')" >
+    <i class="fa fa-wrench"></i>
+    {{ 'NAV.BUILD_RESUME' | translate }}
+  </a>
+  <div class="dropdown">
+    <button class="dropbtn">
+      <i class="fa fa-print"></i>
+      {{ 'NAV.PRINT' | translate }}
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="PrintPreviewList" class="dropdown-content">
+      <a href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/saved-cover-letters')" >
+        {{ 'NAV.COVER_LETTER' | translate }}
+      </a>
+      <a href="javascript:void(0)" (click)="selectNavItem('/app/4/resumebuilder/saved-resumes')" >
+        {{ 'NAV.RESUME' | translate }}
+      </a>
+    </div>
+  </div>
+</div>

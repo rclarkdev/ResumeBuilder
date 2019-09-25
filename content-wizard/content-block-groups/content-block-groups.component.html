@@ -1,0 +1,20 @@
+<div class="main-content" id="ContentBlockGroups">
+    <app-nav-button [text]='navText' [icon]='navIcon' [url]='navUrl'></app-nav-button>
+  <div class="row select-group-heading">
+    <h4>
+      <span [innerHTML]="'CAPTION.SELECT_GROUP' | translate"></span>:
+      <span><b>{{contentBlockName}}</b></span>
+    </h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let group of contentBlockGroups">
+        <div class="menu-item" (click)="selectGroup(group)">
+          <i class="fa fa-plus-square-o" style="color:#337ab7;"></i>
+          <p>{{group.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-saved-blocks></app-saved-blocks>
+</div>

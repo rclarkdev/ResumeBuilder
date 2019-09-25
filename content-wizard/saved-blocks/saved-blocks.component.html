@@ -1,0 +1,23 @@
+<div class="hidden" id="ContentBlockSections">
+  <h4 [innerHTML]="'LABEL.SAVED_SECTIONS' | translate"></h4>
+  <div class="row" *ngIf="contentBlockSections?.length > 0" >
+  
+    <div class="content-block-sections">
+    <table>
+      <tr>
+        <th width="70%">Content Block Name</th>
+        <th width="30%">Actions</th> 
+      </tr>
+      <tr *ngFor="let contentBlockSection of contentBlockSections">
+          <td [innerHTML]="contentBlockSection.title"></td>
+          <td>
+            <a [innerHTML]="'BUTTON.EDIT' | translate" href="javascript:void(0)" (click)="getSavedContentBlock(contentBlockSection.id, contentBlockSection.contentBlockName, contentBlockSection.contentBlockGroupId)">
+            </a>
+            &nbsp; | &nbsp;
+            <a [innerHTML]="'BUTTON.DELETE' | translate" href="javascript:void(0)" (click)="deleteSavedContentBlock(contentBlockSection.id)"></a>
+          </td>
+        </tr>          
+    </table>
+    </div>
+  </div>
+</div> 

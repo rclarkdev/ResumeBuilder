@@ -1,0 +1,18 @@
+<div [class]="contentBlockEducation.ClassName">
+    <ng-container *ngIf="contentBlockEducation.CustomName; else contentBlockName">
+        <h2>{{contentBlockEducation.CustomName}}</h2>
+    </ng-container>
+    <ng-template #contentBlockName>
+        <h2>{{contentBlockEducation.ContentBlockName}}</h2>
+    </ng-template>
+    <div *ngFor="let group of contentBlockEducation.ContentBlockGroups">
+        <h3>{{group.ContentBlockGroupName}}</h3>
+        <div class="education-name answers" *ngIf="group.OrganizationName">{{group.OrganizationName}},&nbsp;</div>
+        <div class="location" *ngIf="group.Location">{{group.Location}}</div><br>
+        <div class="clear-both"></div>
+        <div class="date-awarded" *ngIf="group.DateAwarded">{{group.DateAwarded}},&nbsp;</div>
+        <div [ngClass]="{'awarded' : true, answers: !group.DateAwarded }" *ngIf="group.OtherAwardHidden">{{group.OtherAwardHidden}}</div><br>
+        <div class="degree-program" *ngIf="group.DegreeProgram">{{group.DegreeProgram}}</div>
+        <div class="addtional-description text-area-value" *ngIf="group.AdditionalDescription" [innerHTML]="group.AdditionalDescription"></div>
+    </div>
+</div>
